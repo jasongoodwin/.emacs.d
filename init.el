@@ -1,4 +1,3 @@
-
 (setq inhibit-splash-screen t)
 (tool-bar-mode -1)
 
@@ -100,3 +99,5 @@
  ;; If there is more than one, they won't work right.
 )
 (projectile-global-mode)
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
