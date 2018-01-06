@@ -91,16 +91,27 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (nyan-mode elixir-mode helm-projectile helm projectile darcula-theme smex ido-completing-read+))))
+    (rainbow-delimiters nyan-mode elixir-mode helm-projectile helm projectile darcula-theme smex ido-completing-read+))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(fset 'yes-or-no-p 'y-or-n-p)
+(show-paren-mode t)
+(setq-default show-trailing-whitespace t)
+
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+(setq backup-directory-alist '(("." . "~/.saves")))
+
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
 (nyan-mode)
 (nyan-toggle-wavy-trail)
 (nyan-start-animation)
+
+
