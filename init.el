@@ -110,8 +110,13 @@
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
 (helm-projectile-on)
+
+(setq alchemist-mix-command "/usr/local/bin/mix")
+
+(global-auto-revert-mode t)
+
+;; Modeline bar config
 (nyan-mode)
 (nyan-toggle-wavy-trail)
 (nyan-start-animation)
-
 
