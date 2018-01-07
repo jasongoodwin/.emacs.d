@@ -1,2 +1,3 @@
 # emacs-osx-sanity
-my emacs things.
+
+obviously a terrible mess but my terrible mess.
