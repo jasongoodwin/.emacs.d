@@ -15,6 +15,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("02591317120fb1d02f8eb4ad48831823a7926113fa9ecfb5a59742420de206e0" default)))
  '(package-selected-packages
    (quote
     (nyan-mode elixir-mode geben-helm-projectile helm-projectile helm))))
@@ -114,3 +117,5 @@
 (nyan-mode)
 (nyan-toggle-wavy-trail)
 (nyan-start-animation)
+
+(scroll-bar-mode -1)
