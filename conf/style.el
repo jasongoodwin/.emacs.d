@@ -2,7 +2,7 @@
 
 ;; firacode font w/ ligatures
 ;; Requires install of firacode from brew
-(set-face-attribute 'default (selected-frame) :height 150)
+(set-face-attribute 'default (selected-frame) :height 135)
 (when (window-system)
   (set-default-font "Fira Code Retina"))
 (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
