@@ -40,7 +40,7 @@
 
 ;; theme path
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'zenburn t)
+(load-theme 'idea-darkula t)
 
 (show-paren-mode t)
 (setq-default show-trailing-whitespace t)
