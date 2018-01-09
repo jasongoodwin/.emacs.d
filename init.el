@@ -14,7 +14,7 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(setq backup-directory-alist '(("." . "/tmp")))
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

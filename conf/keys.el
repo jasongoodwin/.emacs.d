@@ -16,3 +16,4 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
