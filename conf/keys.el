@@ -17,3 +17,12 @@
   (windmove-default-keybindings))
 
 (global-set-key (kbd "C-x b") 'helm-buffers-list)
+
+;; disable org mode shift select
+(eval-after-load 'org
+  (progn
+    (define-key org-mode-map (kbd "<S-right>") nil)
+    (define-key org-mode-map (kbd "<S-left>") nil)
+    (define-key org-mode-map (kbd "<S-up>") nil)
+    (define-key org-mode-map (kbd "<S-down>") nil)
+    ))

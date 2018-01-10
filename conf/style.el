@@ -36,12 +36,16 @@
                           `([,(cdr char-regexp) 0 font-shape-gstring]))))
 
 (setq inhibit-splash-screen t)
-(tool-bar-mode -1)
+
+;; turn off window-system features 
+(if window-system
+    (tool-bar-mode -1))
+(if window-system
+    (scroll-bar-mode -1))
 
 ;; theme path
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'idea-darkula t)
 
 (show-paren-mode t)
-(setq-default show-trailing-whitespace t)
-(scroll-bar-mode -1)
+;;(setq-default show-trailing-whitespace t)
