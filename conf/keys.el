@@ -1,4 +1,4 @@
-;; key bindings
+;; disable arrows 
 (global-unset-key (kbd "<left>"))
 (global-unset-key (kbd "<right>"))
 (global-unset-key (kbd "<up>"))
@@ -16,8 +16,6 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
-
 ;; disable org mode shift select
 (with-eval-after-load 'org
   (progn
@@ -26,3 +24,10 @@
     (define-key org-mode-map (kbd "<S-up>") nil)
     (define-key org-mode-map (kbd "<S-down>") nil)
   ))
+
+;; Keybinding Overrides
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+
+;; Custom navigation
+(global-set-key (kbd "M-p") 'scroll-down-line)
+(global-set-key (kbd "M-n") 'scroll-up-line)
