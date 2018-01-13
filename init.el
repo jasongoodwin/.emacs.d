@@ -9,6 +9,7 @@
 (load-library "style")
 (load-library "keys")
 (load-library "modes")
+(load-library "elixir-formatter")
 
 (add-hook 'focus-out-hook (lambda () (save-some-buffers t)))
 
