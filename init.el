@@ -25,10 +25,11 @@
     ("02591317120fb1d02f8eb4ad48831823a7926113fa9ecfb5a59742420de206e0" default)))
  '(package-selected-packages
    (quote
-    (markdown-mode wttrin nyan-mode elixir-mode geben-helm-projectile helm-projectile helm))))
+    (clojure-mode markdown-mode wttrin nyan-mode elixir-mode geben-helm-projectile helm-projectile helm))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
