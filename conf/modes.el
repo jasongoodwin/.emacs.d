@@ -15,3 +15,13 @@
 (require 'helm-smex)
 (global-set-key [remap execute-extended-command] #'helm-smex)
 (global-set-key (kbd "M-X") #'helm-smex-major-mode-commands)
+
+(use-package ensime
+  :ensure t
+  :pin melpa-stable)
+
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "M-n") nil)
+  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous))

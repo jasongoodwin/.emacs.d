@@ -25,7 +25,7 @@
     ("02591317120fb1d02f8eb4ad48831823a7926113fa9ecfb5a59742420de206e0" default)))
  '(package-selected-packages
    (quote
-    (clojure-mode markdown-mode wttrin nyan-mode elixir-mode geben-helm-projectile helm-projectile helm))))
+    (hackernews clojure-mode markdown-mode wttrin nyan-mode elixir-mode geben-helm-projectile helm-projectile helm))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,3 +33,39 @@
  ;; If there is more than one, they won't work right.
  )
 
+(use-package ensime
+  :ensure t
+  :pin melpa-stable)
+
+;; GTD Things...
+
+(setq org-agenda-files '("~/gtd/inbox.org"
+                         "~/gtd/gtd.org"
+                         "~/gtd/done.org"
+                         "~/gtd/scratch.org"
+                         "~/gtd/tickler.org"))
+
+(setq org-capture-templates '(("t" "Todo [inbox]" entry
+                               (file+headline "~/gtd/inbox.org" "Tasks")
+                               "* TODO %i%?")
+                              ("T" "Tickler" entry
+                               (file+headline "~/gtd/tickler.org" "Tickler")
+                               "* %i%? \n %U")))
+
+(find-file "~/gtd/inbox.org")
+(find-file "~/gtd/gtd.org")
+(find-file "~/gtd/done.org")
+(find-file "~/gtd/tickler.org")
+(find-file "~/gtd/scratch.org")
+
+(setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
+(setq org-refile-targets '(("~/gtd/gtd.org" :maxlevel . 1)
+			   ("~/gtd/inbox.org" :maxlevel . 1)
+                           ("~/gtd/done.org" :maxlevel . 1)
+                           ("~/gtd/tickler.org" :maxlevel . 1)))
+
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cr" 'org-refile)
+
+;;
