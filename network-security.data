@@ -1,5 +1,5 @@
 (
+ (:id "sha1:ccfd2cc2a08c89a9b10969be8c1e926954d53e28" :fingerprint "sha1:b2:85:5c:6f:45:23:d5:88:0e:82:ee:17:b9:eb:c1:88:ed:50:84:44" :host "stable.melpa.org:443" :conditions (:insecure :unknown-ca :invalid))
  (:id "sha1:1da71d9b31f5cb2907f07a7b3953f2f2a5dde0e3" :fingerprint "sha1:1c:f8:13:24:76:a3:ff:08:26:03:08:91:11:a1:f3:cb:af:ad:49:cc" :host "hacker-news.firebaseio.com:443" :conditions (:insecure :unknown-ca :invalid))
  (:id "sha1:85457c729378cc93c732b6a3941c8e4f9c2e60f3" :fingerprint "sha1:ab:a6:d7:6a:b3:d3:63:fa:19:0d:65:41:60:23:6e:ef:d3:2a:46:dc" :host "marmalade-repo.org:443" :conditions (:insecure :unknown-ca :invalid))
- (:id "sha1:ccfd2cc2a08c89a9b10969be8c1e926954d53e28" :fingerprint "sha1:10:cc:55:d1:85:25:e4:13:aa:6d:77:b7:df:36:50:fd:3e:e8:bd:6a" :host "stable.melpa.org:443" :conditions (:insecure :unknown-ca :invalid))
 )
