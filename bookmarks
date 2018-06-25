@@ -4,9 +4,9 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/gtd/done.org")
- (front-context-string . "** TODO Fix shim")
- (rear-context-string . " Details Ready\n\n")
- (position . 315))
+ (front-context-string . "** TODO Yancey s")
+ (rear-context-string . " in funnelcloud\n")
+ (position . 520))
 ("org-capture-last-stored"
  (filename . "~/gtd/inbox.org")
  (front-context-string . "** TODO there wa")
