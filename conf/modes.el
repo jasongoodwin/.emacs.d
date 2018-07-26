@@ -26,8 +26,14 @@
   (define-key company-active-map (kbd "C-n") #'company-select-next)
   (define-key company-active-map (kbd "C-p") #'company-select-previous))
 
+;; I don't think I like truncated lines
+(set-default 'truncate-lines t)
+
 ;; turn on rainbow delimiters
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+;; dash docs
+(setq helm-dash-common-docsets '("Elixir")) 
 
 ;; org-mode items
 (setq org-src-fontify-natively t)
