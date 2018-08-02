@@ -38,4 +38,5 @@
 ;; org-mode items
 (setq org-src-fontify-natively t)
 
-
+;; company mode
+(add-hook 'after-init-hook 'global-company-mode)
