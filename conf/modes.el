@@ -40,3 +40,4 @@
 
 ;; company mode
 (add-hook 'after-init-hook 'global-company-mode)
+(add-to-list 'elixir-mode-hook (alchemist-mode +1))
